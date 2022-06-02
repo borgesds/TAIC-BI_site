@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --header-height: 4.5rem;
+
+    --black: #2D3540;
+    --orange: #be5600;
+    --white: #FAFAFA;
+    --yellow: #F2CE1B;
+    --yellow2: #F2DBAE;
+    --gray-dark: #4D5E77;
+    --text-color-light: hsl(0 0% 98%);
+
+    font-size: 62.5%; /* 10px */
+
+    --title-font: 'Poppins', sans-serif;
+    
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+}
+
+body {
+    height: 100vh;
+    background: var(--black);
+}
+
+.title {
+    font: 500 var(--title-font-size) var(--title-font);
+    color: var(--black);
+}
+
+/* ==== Navigation =================================*/
+header {
+    grid-area: header;
+    background: var(--yellow);
+}
+
+.menu {
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* ==== Layout =====================================*/
+.container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#header {
+    border-bottom: 1px solid var(--text-color-light);
+
+
+    /*Fixar o header*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--yellow);
+    width: 100%;
+}
+
+/* ==== Logo =====================================*/
+.logo {
+    font: 700 3rem 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+.logo span {
+    font: 400 1.5rem 'Poppins', sans-serif;
+    font-style: italic;
+    color: var(--orange);
+}

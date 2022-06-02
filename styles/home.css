@@ -1,0 +1,86 @@
+body {
+    display: flex;
+}
+
+/* ==== Grid =================================*/
+.content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+
+    grid-template-areas:
+        'header header'
+        'left right';
+}
+
+
+#image {
+    grid-area: left;
+
+    background: url('/images/astro.svg') no-repeat top/contain;
+
+    width: auto;
+    height: 100%;
+}
+
+main {
+    grid-area: right;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: -5rem;
+}
+
+main .container {
+    width: min(36.4rem, 100%);
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--yellow);
+    font-size: clamp(20px, 5vw, 3rem);
+    text-align: center;
+
+    margin-bottom: 2.5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: justify;
+    text-indent: 3rem;
+}
+
+.button {
+    border-radius: .8rem;
+    height: 5rem;
+
+    font-family: 'Poppins';
+    font-size: 500;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--gray-dark);
+    color: var(--text-color-light);
+
+    transition: .5s;
+
+    cursor: pointer;
+
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.button:hover {
+    color: var(--text-color-);
+    background: var(--yellow);
+}
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
