@@ -13,7 +13,7 @@ html {
     --orange: #be5600;
     --white: #FAFAFA;
     --yellow: #F2CE1B;
-    --yellow2: #F2DBAE;
+    --yellow2: hsla(50, 89%, 53%, 0.699);
     --gray-dark: #4D5E77;
     --text-color-light: hsl(0 0% 98%);
 
