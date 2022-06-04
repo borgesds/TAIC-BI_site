@@ -7,17 +7,19 @@
     <title>SQL</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/global.css">
+    <!-- <link rel="stylesheet" href="styles/global.css"> -->
     <link rel="stylesheet" href="styles/sql.css">
 </head>
 <body>
     <main class="container-sql">
-        
-        <section class="box-1">
+        <section class="img">
             <div>
                 <img class="image-1" src="/images/banco-de-dados.png" alt="Banco de dados">
             </div>
-
+        </section>
+        
+        <section class="box-1">
+            
             <div class="button">
                 <a class="btn-link" href="/home.html">Início</a>
             </div>
@@ -62,7 +64,8 @@
                         JOIN usuario u ON u."id" = a.usuario_alteracao
                         JOIN equipe e ON e."id" = u.equipe 
                         WHERE
-                        c.descricao like '%PROATIVA_CARTÃO_3004_Fila_02%' or c.descricao like '%PROATIVA_CARTÃO_3004_Fila_01%'
+                        c.descricao like '%PROATIVA_CARTÃO_3004_Fila_02%' 
+                        or c.descricao like '%PROATIVA_CARTÃO_3004_Fila_01%'
                         GROUP BY "Data Alteração"
                         ORDER BY "Data Alteração" ASC
                     </code></pre>
